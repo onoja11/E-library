@@ -1,17 +1,8 @@
 {
     "version": 2,
     "framework": null,
-    "builds": [
-        {
-            "src": "api/index.php",
-            "use": "@vercel/php",
-            "config": {
-                "installCommand": "apk add --no-cache openssl1.1"
-            }
-        }
-    ],
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@latest" }
     },
     "routes": [
         {
